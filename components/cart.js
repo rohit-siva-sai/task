@@ -3,27 +3,28 @@ import Comp from "./comp";
 
 const Cart = () => {
   return (
-    <div className="bg-gradient-to-r from-pink-500 py-12 flex flex-col items-center space-y-24 via-rose-500 to-yellow-500">
-        <p className="text-3xl font-semibold text-white text-center">Order Now</p>
+    <div className="bg-gradient-to-r from-pink-400 py-12 flex flex-col items-center space-y-24 via-rose-400 to-yellow-300">
+        <p className="text-5xl font-bold text-white text-center">Order Now</p>
       <div className="flex justify-center items-center space-x-24 ">
         <Comp
           img={"/bg2.jpg"}
           head={"pizza"}
-          text={"lorehsvhgs sadhwvddwewe  dwjdgvwdjhvwejb jh sdjwhdv"}
+          text={"Lorem Ipsum has been the industry's standard dummy text"}
         />
         <Comp
           img={"/bg3.jpg"}
           head={"pasta"}
-          text={"lorehsvhgs sadhwvddwewe  dwjdgvwdjhvwejb jh sdjwhdv"}
+          text={"Lorem Ipsum has been the industry's standard dummy text"}
         />
         <Comp
           img={"/bg4.jpg"}
           head={"burger"}
-          text={"lorehsvhgs sadhwvddwewe  dwjdgvwdjhvwejb jh sdjwhdv"}
+          text={"Lorem Ipsum has been the industry's standard dummy text"}
+          
         />
       </div>
-      <div className="bg-gray-300/30 px-4 py-2 w-fit rounded-2xl">
-        Order now
+      <div className="bg-gray-300/30 font-extrabold px-12 py-2 w-fit cursor-pointer rounded-2xl">
+        Order
       </div>
     </div>
   );
