@@ -3,7 +3,7 @@ import Comp from "./comp";
 
 const Cart = () => {
   return (
-    <div className="bg-gradient-to-r from-pink-400 py-12 flex flex-col items-center space-y-24 via-rose-400 to-yellow-300">
+    <div className="bg-gradient-to-r from-pink-400 py-20 flex flex-col items-center space-y-24 via-rose-400 to-yellow-300">
         <p className="text-5xl font-bold text-white text-center">Order Now</p>
       <div className="flex justify-center items-center space-x-24 ">
         <Comp
