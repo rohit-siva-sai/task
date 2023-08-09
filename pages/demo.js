@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import styles from "../styles/Demo.module.css";
 const Demo = () => {
-  const [name,setName] = useState("hue-rotate-180")
-  let l = 1782
+  const [name, setName] = useState("hue-rotatse-180");
+  let l = 1782;
   // let array = new Array()
-  let d = 14
+  let d = 14;
   return (
     <div>
       <div
@@ -12,22 +12,147 @@ const Demo = () => {
       >
         <div>
           <picture>
-            <img src="/homebg1.webp" className= {`brightness-110 ${name} huse-rotate-180 blsur-xl contrast-150s saturate-15s0 xhue-rotate-180` }alt="" />
+            <img
+              src="/homebg1.webp"
+              className={`brightness-110 ${name}  contrast-150s   saturate-15s0 xhue-rotate-180`}
+              alt=""
+            />
           </picture>
         </div>
         <div className="absolute -top-24 left-0 rotate-0 z-20">
           <picture>
-            <img src="https://i.gifer.com/2ii5.gif" className=" rotate-12 opacity-5 border mix-blend-lighten w-[1500px] h-[1000px]"  alt="" />
+            <img
+              src="https://i.gifer.com/2ii5.gif"
+              className=" rotate-12 opacity-5 border mix-blend-lighten w-[1500px] h-[1000px]"
+              alt=""
+            />
           </picture>
         </div>
-        <div className="flex absolute top-4 left-4 space-x-2 z-50">
-          <div onClick={()=>{setName("contrast-150")}} className="cursor-pointer p-2 font-semibold bg-transparent text-white " >1</div>
-          <div onClick={()=>{setName("saturate-150")}} className="cursor-pointer p-2 font-semibold bg-transparent text-white " >2</div>
-          <div onClick={()=>{setName("invert")}} className="cursor-pointer p-2 font-semibold bg-transparent text-white " >3</div>
-          <div onClick={()=>{setName("hue-rotate-180")}} className="cursor-pointer p-2 font-semibold bg-transparent text-white " >4</div>
+        <div className="flex fixed bottom-4 left-4 space-x-2 z-50">
+          <div
+            onClick={() => {
+              setName("contrast-150");
+            }}
+            className="w-8 h-8 flex justify-center items-center font-semibold bg-gray-50/10 rounded-full cursor-pointer p-2 text-white "
+          >
+            1
+          </div>
+          <div
+            onClick={() => {
+              setName("contrast-200");
+            }}
+            className="w-8 h-8 flex justify-center items-center font-semibold bg-gray-50/10 rounded-full cursor-pointer p-2 text-white "
+          >
+            2
+          </div>
+          <div
+            onClick={() => {
+              setName("saturate-150");
+            }}
+            className="w-8 h-8 flex justify-center items-center font-semibold bg-gray-50/10 rounded-full cursor-pointer p-2 text-white "
+          >
+            3
+          </div>
+          <div
+            onClick={() => {
+              setName("saturate-200");
+            }}
+            className="w-8 h-8 flex justify-center items-center  bg-gray-50/10 rounded-full cursor-pointer font-semibold text-white "
+          >
+            4
+          </div>
+          <div
+            onClick={() => {
+              setName("grayscale");
+            }}
+            className="w-8 h-8 flex justify-center items-center font-semibold bg-gray-50/10 rounded-full cursor-pointer p-2 text-white "
+          >
+            5
+          </div>
+          <div
+            onClick={() => {
+              setName("sepia");
+            }}
+            className="w-8 h-8 flex justify-center items-center font-semibold bg-gray-50/10 rounded-full cursor-pointer p-2 text-white "
+          >
+            6
+          </div>
+          <div
+            onClick={() => {
+              setName("invert");
+            }}
+            className="w-8 h-8 flex justify-center items-center font-semibold bg-gray-50/10 rounded-full cursor-pointer p-2 text-white "
+          >
+            7
+          </div>
+          <div
+            onClick={() => {
+              setName("hue-rotate-15");
+            }}
+            className="w-8 h-8 flex justify-center items-center font-semibold bg-gray-50/10 rounded-full cursor-pointer p-2 text-white "
+          >
+            8
+          </div>
+          <div
+            onClick={() => {
+              setName("hue-rotate-30");
+            }}
+            className="w-8 h-8 flex justify-center items-center font-semibold bg-gray-50/10 rounded-full cursor-pointer p-2 text-white "
+          >
+            9
+          </div>
+          <div
+            onClick={() => {
+              setName("hue-rotate-60");
+            }}
+            className="w-8 h-8 flex justify-center items-center font-semibold bg-gray-50/10 rounded-full cursor-pointer p-2 text-white "
+          >
+            10
+          </div>
+          <div
+            onClick={() => {
+              setName("hue-rotate-90");
+            }}
+            className="w-8 h-8 flex justify-center items-center font-semibold bg-gray-50/10 rounded-full cursor-pointer p-2 text-white "
+          >
+            11
+          </div>
+          <div
+            onClick={() => {
+              setName("-hue-rotate-30");
+            }}
+            className="w-8 h-8 flex justify-center items-center font-semibold bg-gray-50/10 rounded-full cursor-pointer p-2 text-white "
+          >
+            12
+          </div>
+          <div
+            onClick={() => {
+              setName("-hue-rotate-60");
+            }}
+            className="w-8 h-8 flex justify-center items-center font-semibold bg-gray-50/10 rounded-full cursor-pointer p-2 text-white "
+          >
+            13
+          </div>
+          <div
+            onClick={() => {
+              setName("-hue-rotate-90");
+            }}
+            className="w-8 h-8 flex justify-center items-center font-semibold bg-gray-50/10 rounded-full cursor-pointer p-2 text-white "
+          >
+            14
+          </div>
+          <div
+            onClick={() => {
+              setName("-hue-rotate-180");
+            }}
+            className="w-8 h-8 flex justify-center items-center font-semibold bg-gray-50/10 rounded-full cursor-pointer p-2 text-white "
+          >
+            15
+          </div>
+         
         </div>
 
-       {/* <div className={`z-40 absolute top-0 flex justify-center w-full scale-150 h-[150vh] ${styles.effect}`}>
+        {/* <div className={`z-40 absolute top-0 flex justify-center w-full scale-150 h-[150vh] ${styles.effect}`}>
        {[...Array(100)].map((u,index)=>{
           return (
             <p className={`w-[2px] \ left-[${Math.floor(Math.random() *  1700)}px] delay-[${Math.random()*7 - 7 }s] duration-[${Math.random()*3}s] ${styles.rain} `}   >hgsvhsvhgvs</p>
