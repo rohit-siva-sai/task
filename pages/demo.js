@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/Demo.module.css";
 const Demo = () => {
+  const [name,setName] = useState("hue-rotate-180")
   let l = 1782
   // let array = new Array()
   let d = 14
@@ -11,13 +12,19 @@ const Demo = () => {
       >
         <div>
           <picture>
-            <img src="/homebg1.webp" className=" brightness-110 hue-rotate-180 contrast-150s saturate-15s0 xhue-rotate-180" alt="" />
+            <img src="/homebg1.webp" className= {`brightness-110 ${name} huse-rotate-180 blsur-xl contrast-150s saturate-15s0 xhue-rotate-180` }alt="" />
           </picture>
         </div>
         <div className="absolute -top-24 left-0 rotate-0 z-20">
           <picture>
             <img src="https://i.gifer.com/2ii5.gif" className=" rotate-12 opacity-5 border mix-blend-lighten w-[1500px] h-[1000px]"  alt="" />
           </picture>
+        </div>
+        <div className="flex absolute top-4 left-4 space-x-2 z-50">
+          <div onClick={()=>{setName("contrast-150")}} className="cursor-pointer p-2 font-semibold bg-transparent text-white " >1</div>
+          <div onClick={()=>{setName("saturate-150")}} className="cursor-pointer p-2 font-semibold bg-transparent text-white " >2</div>
+          <div onClick={()=>{setName("invert")}} className="cursor-pointer p-2 font-semibold bg-transparent text-white " >3</div>
+          <div onClick={()=>{setName("hue-rotate-180")}} className="cursor-pointer p-2 font-semibold bg-transparent text-white " >4</div>
         </div>
 
        {/* <div className={`z-40 absolute top-0 flex justify-center w-full scale-150 h-[150vh] ${styles.effect}`}>
