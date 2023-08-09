@@ -1,0 +1,58 @@
+.bg {
+  /* width: 1600px; */
+  /* transform: scaleX(130%); */
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url(/homebg1.webp);
+  background-position: center;
+  filter: brightness(140%);
+  background-size: cover;
+  
+  mix-blend-mode: multiply;
+  /* opacity: 0.3; */
+}
+
+.opacity{
+    color: transparent;
+    background-color: transparent;
+    mix-blend-mode: lighten;
+    opacity: 0.15;
+    filter: brightness(120%);
+}
+
+.raisn {
+    position: absolute;
+    height: 160px;
+    background: linear-gradient(transparent,#fff);
+    animation: raining .4s linear infinite;
+    color: white;
+}
+.rain {
+    width: 50px;
+  border-color: transparent;
+  border-right-color: rgba(255, 255, 255, 0.7);
+  border-right-width: 50px;
+  position: absolute;
+  bottom: 100%;
+  transform-origin: 100% 50%;
+  animation-name: raining;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes raining{
+    from {
+        transform: rotate(105deg) translateX(0);
+       }
+       to {
+        transform: rotate(105deg) translateX(calc(100vh + 20px));
+       }
+}
+.effect {
+    margin-top: -100px;
+    overflow: hidden;
+    transform: rotate(15deg);
+    padding: 0px;
+    opacity: 0.2;
+}
