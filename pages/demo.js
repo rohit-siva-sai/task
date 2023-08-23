@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import styles from "../styles/Demo.module.css";
 const Demo = () => {
-  const [name, setName] = useState("hue-rotatse-180");
+  const [name, setName] = useState("hue-rotate-180");
+  const [pop, setPop] = useState(false);
   let l = 1782;
   // let array = new Array()
   let d = 14;
@@ -14,26 +15,37 @@ const Demo = () => {
           <picture>
             <img
               src="/homebg1.webp"
-              className={`brightness-110 ${name}  contrast-150s   saturate-15s0 xhue-rotate-180`}
+              className={`brightness-110 ${name}  contrast-200 mix-blend-hard-light contrast-150s   saturate-15s0 xhue-rotate-180`}
               alt=""
             />
           </picture>
         </div>
-        <div className="absolute -top-24 left-0 rotate-0 z-20">
+        <div className="absolute  -top-24 left-0 rotate-0 z-20">
           <picture>
             <img
               src="https://i.gifer.com/2ii5.gif"
-              className=" rotate-12 opacity-5 border mix-blend-lighten w-[1500px] h-[1000px]"
+              className=" rotate-12 opacity-10 saturate-200 border mix-blend-lighten w-[1500px] h-[1000px]"
               alt=""
             />
           </picture>
         </div>
+        {
+          <div className="fixed rounded-lg z-50 top-4 left-4 px-3 py-1 bg-gray-50/10 text-white font-medium">
+            {name}
+          </div>
+        }
         <div className="flex fixed bottom-4 left-4 space-x-2 z-50">
           <div
             onClick={() => {
               setName("contrast-150");
             }}
             className="w-8 h-8 flex justify-center items-center font-semibold bg-gray-50/10 rounded-full cursor-pointer p-2 text-white "
+            onMouseOver={() => {
+              setPop(true);
+            }}
+            onMouseLeave={() => {
+              setPop(false);
+            }}
           >
             1
           </div>
@@ -149,7 +161,6 @@ const Demo = () => {
           >
             15
           </div>
-         
         </div>
 
         {/* <div className={`z-40 absolute top-0 flex justify-center w-full scale-150 h-[150vh] ${styles.effect}`}>
@@ -161,7 +172,7 @@ const Demo = () => {
        </div> */}
         <div className="grid  w-full h-full text-white  grid-cols-2 absolute top-0 left-0 ">
           <div
-            className={`bg-gradient-to-b from-[#000AFF]/[0.32] from-[84%] via-[#510202]/[0.3] to-[#260606]/[0.50] mix-blend-overlay bg-opacity-[0.32] border-white z-40 basis-[52%] md:basis-[51%] `}
+            className={`bg-gradient-to-b from-[#000AFF]/[0.32] from-[84%] via-[#510202]/[0.3] to-[#260606]/[0.50] mix-blend-overlay bg-opacity-[0.32] z-40 basis-[52%] md:basis-[51%] `}
           >
             <div className="h-990px"></div>
           </div>
